@@ -9,11 +9,24 @@ This is a multiline comment.
 ## Variables
 ### Initialization
 ```v
+a u8 :- 1; b u16 :- 2; c u32 :- 3
+// or
+a u8 @- 1; b u16 @- 2; c u32 @- 3
+```
+```v
 a u8, b u16, c u32 :- u8_1, u16_2, u32_3
 a, b, c u8 @- 1, 2, 3
 a, b, c u8 $- 1
 ```
+```v
+a \- 1, b \- 2, c \- 3 u8 // ?
+```
 ### Assignment
+```v
+a u8 := 1; b u16 := 2; c u32 := 3
+// or
+a u8 @= 1; b u16 @= 2; c u32 @= 3
+```
 ```v
 a u8, b u16, c u32 := u8_1, u16_2, u32_3
 a, b, c u8 @= 1, 2, 3
