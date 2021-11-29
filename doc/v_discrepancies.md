@@ -68,7 +68,7 @@ arr 3u8 :- [1 2 3]
 arr :- 3u8[1 2 3]
 ```
 ### Dynamic Arrays
-#### Initialization
+#### Initialization [REVIEW]
 ```v
 arr _u8 :- u8[1 2 3]
 // or
