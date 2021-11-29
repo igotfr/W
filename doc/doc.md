@@ -32,6 +32,9 @@ a u8, b u16, c u32 := u8_1, u16_2, u32_3
 a, b, c u8 @= 1, 2, 3
 a, b, c u8 $= 1
 ```
+```v
+a \= 1, b \= 2, c \= 3 u8 // ?
+```
 ## W Types
 ### Primitive types
 ```v ignore
@@ -72,13 +75,31 @@ f32_45.7
 123e-2 // 1.23
 456e+2 // 45600
 ```
-### Arrays
-### Initialization
+## Arrays
+### Fixed Size Arrays
+#### Initialization
 ```v
+arr 3u8 :- 3u8[1 2 3]
+// or
 arr 3u8 :- u8[1 2 3]
+// or
+arr 3u8 :- [1 2 3]
+// or
+arr :- 3u8[1 2 3]
 ```
-### Destructuring
+### Dynamic Arrays
+#### Initialization
 ```v
-a, b, c u8 :- u8[1 2 3]
+arr _u8 :- u8[1 2 3]
+// or
+arr _u8 :- [1 2 3]
+// or
+arr :- u8[1 2 3]
+// or
+arr :- [1 2 3]
+```
+#### Destructuring
+```v
+[a, b, c] u8 :- u8[1 2 3]
 // a = 1 b = 2 c = 3
 ```
