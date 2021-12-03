@@ -83,3 +83,13 @@ arr :- [1 2 3]
 [a, b, c] u8 :- u8[1 2 3]
 // a = 1 b = 2 c = 3
 ```
+## Data
+```v
+data Person {
+   id u32
+   name stru8 [named] | cpf u16,
+}
+
+p1 := Person{1, name: 'Valdinei'}
+p2 := Person{2, 11111111}
+```
