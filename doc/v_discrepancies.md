@@ -93,3 +93,11 @@ data Person {
 p1 := Person{1, name: 'Valdinei'}
 p2 := Person{2, 11111111}
 ```
+## Control Structure
+### match (exhaustive)
+```v
+match x, y {
+   (2, 3, 7..12, >= 19) && (4, 6, 11.=15, < 0) {}
+   (2, 3, 7..12, >= 19) || (4, 6, 11.=15, < 0) {}
+}
+```
