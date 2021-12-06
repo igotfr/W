@@ -85,7 +85,7 @@ arr :- [1 2 3]
 ```
 ## Data
 ```v
-data Person {
+strun Person {
    id u32
    name stru8 [named] | cpf u16,
 }
