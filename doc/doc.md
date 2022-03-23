@@ -1,4 +1,4 @@
-## Comments
+## Comments [REVIEW]
 ```v
 // This is a single line comment.
 /*
@@ -49,7 +49,7 @@ voidptr // this one is mostly used for C interoperability
 any // similar to C's void* and Go's interface{}
 ```
 ### Numbers
-#### Casting
+#### Casting [REVIEW]
 ```v
 i64_123
 u8_42
@@ -88,7 +88,7 @@ arr 3u8 :- [1 2 3]
 arr :- 3u8[1 2 3]
 ```
 ### Dynamic Arrays
-#### Initialization
+#### Initialization [REVIEW]
 ```v
 arr _u8 :- u8[1 2 3]
 // or
@@ -102,4 +102,12 @@ arr :- [1 2 3]
 ```v
 [a, b, c] u8 :- u8[1 2 3]
 // a = 1 b = 2 c = 3
+```
+## Control Structure
+### match (exhaustive)
+```v
+match x, y {
+   (2, 3, 7..12, >= 19) && (4, 6, 11.=15, < 0) {}
+   (2, 3, 7..12, >= 19) || (4, 6, 11.=15, < 0) {}
+}
 ```
